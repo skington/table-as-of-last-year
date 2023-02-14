@@ -504,5 +504,929 @@
          "home_score" : "4",
          "home_team" : "Leicester"
       }
+   ],
+   "2022-09-08" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Leicester",
+         "home_score" : "2",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Wolves",
+         "home_score" : "3",
+         "home_team" : "Chelsea"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Southampton",
+         "home_score" : "4",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Brentford",
+         "home_score" : "5",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Spurs",
+         "home_score" : "0",
+         "home_team" : "Brighton"
+      }
+   ],
+   "2022-09-09" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Leeds",
+         "home_score" : "2",
+         "home_team" : "Crystal Palace"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Fulham",
+         "home_score" : "3",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Liverpool",
+         "home_score" : "3",
+         "home_team" : "Arsenal"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Man Utd",
+         "home_score" : "1",
+         "home_team" : "Everton"
+      }
+   ],
+   "2022-09-10" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Aston Villa",
+         "home_score" : "1",
+         "home_team" : "Nott'm Forest"
+      }
+   ],
+   "2022-09-14" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Brighton",
+         "home_score" : "2",
+         "home_team" : "Brentford"
+      }
+   ],
+   "2022-09-15" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Crystal Palace",
+         "home_score" : "0",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Bournemouth",
+         "home_score" : "2",
+         "home_team" : "Fulham"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "1",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Everton",
+         "home_score" : "2",
+         "home_team" : "Spurs"
+      }
+   ],
+   "2022-09-16" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Chelsea",
+         "home_score" : "0",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Arsenal",
+         "home_score" : "0",
+         "home_team" : "Leeds"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Newcastle",
+         "home_score" : "0",
+         "home_team" : "Man Utd"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "West Ham",
+         "home_score" : "1",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Man City",
+         "home_score" : "1",
+         "home_team" : "Liverpool"
+      }
+   ],
+   "2022-09-18" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "0",
+         "home_team" : "Brighton"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Wolves",
+         "home_score" : "2",
+         "home_team" : "Crystal Palace"
+      }
+   ],
+   "2022-09-19" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Southampton",
+         "home_score" : "0",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Chelsea",
+         "home_score" : "0",
+         "home_team" : "Brentford"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "West Ham",
+         "home_score" : "1",
+         "home_team" : "Liverpool"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Everton",
+         "home_score" : "1",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Spurs",
+         "home_score" : "2",
+         "home_team" : "Man Utd"
+      }
+   ],
+   "2022-09-20" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Aston Villa",
+         "home_score" : "3",
+         "home_team" : "Fulham"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Leeds",
+         "home_score" : "2",
+         "home_team" : "Leicester"
+      }
+   ],
+   "2022-09-22" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Liverpool",
+         "home_score" : "1",
+         "home_team" : "Nott'm Forest"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Crystal Palace",
+         "home_score" : "3",
+         "home_team" : "Everton"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Brighton",
+         "home_score" : "3",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Man Utd",
+         "home_score" : "1",
+         "home_team" : "Chelsea"
+      }
+   ],
+   "2022-09-23" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Brentford",
+         "home_score" : "4",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Fulham",
+         "home_score" : "2",
+         "home_team" : "Leeds"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Arsenal",
+         "home_score" : "1",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Leicester",
+         "home_score" : "0",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Newcastle",
+         "home_score" : "1",
+         "home_team" : "Spurs"
+      }
+   ],
+   "2022-09-24" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Bournemouth",
+         "home_score" : "2",
+         "home_team" : "West Ham"
+      }
+   ],
+   "2022-09-29" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Man City",
+         "home_score" : "0",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Spurs",
+         "home_score" : "2",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Wolves",
+         "home_score" : "1",
+         "home_team" : "Brentford"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Chelsea",
+         "home_score" : "4",
+         "home_team" : "Brighton"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Southampton",
+         "home_score" : "1",
+         "home_team" : "Crystal Palace"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Aston Villa",
+         "home_score" : "4",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Everton",
+         "home_score" : "0",
+         "home_team" : "Fulham"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Leeds",
+         "home_score" : "1",
+         "home_team" : "Liverpool"
+      }
+   ],
+   "2022-09-30" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "5",
+         "home_team" : "Arsenal"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "West Ham",
+         "home_score" : "1",
+         "home_team" : "Man Utd"
+      }
+   ],
+   "2022-10-05" : [
+      {
+         "away_score" : "3",
+         "away_team" : "Bournemouth",
+         "home_score" : "4",
+         "home_team" : "Leeds"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Fulham",
+         "home_score" : "2",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Brentford",
+         "home_score" : "2",
+         "home_team" : "Nott'm Forest"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Brighton",
+         "home_score" : "2",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Leicester",
+         "home_score" : "0",
+         "home_team" : "Everton"
+      }
+   ],
+   "2022-10-06" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Arsenal",
+         "home_score" : "0",
+         "home_team" : "Chelsea"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Man Utd",
+         "home_score" : "3",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Newcastle",
+         "home_score" : "1",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Crystal Palace",
+         "home_score" : "1",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Liverpool",
+         "home_score" : "1",
+         "home_team" : "Spurs"
+      }
+   ],
+   "2022-10-12" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Brentford",
+         "home_score" : "1",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Everton",
+         "home_score" : "3",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Southampton",
+         "home_score" : "3",
+         "home_team" : "Liverpool"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Crystal Palace",
+         "home_score" : "1",
+         "home_team" : "Nott'm Forest"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Leeds",
+         "home_score" : "4",
+         "home_team" : "Spurs"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Leicester",
+         "home_score" : "0",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Chelsea",
+         "home_score" : "1",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Arsenal",
+         "home_score" : "0",
+         "home_team" : "Wolves"
+      }
+   ],
+   "2022-10-13" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Aston Villa",
+         "home_score" : "1",
+         "home_team" : "Brighton"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Man Utd",
+         "home_score" : "1",
+         "home_team" : "Fulham"
+      }
+   ],
+   "2022-11-26" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Spurs",
+         "home_score" : "2",
+         "home_team" : "Brentford"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Fulham",
+         "home_score" : "0",
+         "home_team" : "Crystal Palace"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Wolves",
+         "home_score" : "1",
+         "home_team" : "Everton"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Newcastle",
+         "home_score" : "0",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Brighton",
+         "home_score" : "1",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "3",
+         "away_team" : "Liverpool",
+         "home_score" : "1",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "West Ham",
+         "home_score" : "3",
+         "home_team" : "Arsenal"
+      }
+   ],
+   "2022-11-27" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Bournemouth",
+         "home_score" : "2",
+         "home_team" : "Chelsea"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "3",
+         "home_team" : "Man Utd"
+      }
+   ],
+   "2022-11-28" : [
+      {
+         "away_score" : "3",
+         "away_team" : "Man City",
+         "home_score" : "1",
+         "home_team" : "Leeds"
+      }
+   ],
+   "2022-11-30" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Brentford",
+         "home_score" : "0",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Leicester",
+         "home_score" : "2",
+         "home_team" : "Liverpool"
+      }
+   ],
+   "2022-11-31" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Man Utd",
+         "home_score" : "0",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Crystal Palace",
+         "home_score" : "0",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Southampton",
+         "home_score" : "2",
+         "home_team" : "Fulham"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Everton",
+         "home_score" : "1",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Leeds",
+         "home_score" : "0",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Arsenal",
+         "home_score" : "2",
+         "home_team" : "Brighton"
+      }
+   ],
+   "2023-00-01" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Aston Villa",
+         "home_score" : "0",
+         "home_team" : "Spurs"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Chelsea",
+         "home_score" : "1",
+         "home_team" : "Nott'm Forest"
+      }
+   ],
+   "2023-00-02" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Liverpool",
+         "home_score" : "3",
+         "home_team" : "Brentford"
+      }
+   ],
+   "2023-00-03" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Newcastle",
+         "home_score" : "0",
+         "home_team" : "Arsenal"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Brighton",
+         "home_score" : "1",
+         "home_team" : "Everton"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Fulham",
+         "home_score" : "0",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Bournemouth",
+         "home_score" : "3",
+         "home_team" : "Man Utd"
+      }
+   ],
+   "2023-00-04" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "0",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "West Ham",
+         "home_score" : "2",
+         "home_team" : "Leeds"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Wolves",
+         "home_score" : "1",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Spurs",
+         "home_score" : "0",
+         "home_team" : "Crystal Palace"
+      }
+   ],
+   "2023-00-05" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Man City",
+         "home_score" : "0",
+         "home_team" : "Chelsea"
+      }
+   ],
+   "2023-00-12" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Chelsea",
+         "home_score" : "2",
+         "home_team" : "Fulham"
+      }
+   ],
+   "2023-00-13" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Leeds",
+         "home_score" : "2",
+         "home_team" : "Aston Villa"
+      }
+   ],
+   "2023-00-14" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Man City",
+         "home_score" : "2",
+         "home_team" : "Man Utd"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Liverpool",
+         "home_score" : "3",
+         "home_team" : "Brighton"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Southampton",
+         "home_score" : "1",
+         "home_team" : "Everton"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Leicester",
+         "home_score" : "2",
+         "home_team" : "Nott'm Forest"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "West Ham",
+         "home_score" : "1",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Bournemouth",
+         "home_score" : "2",
+         "home_team" : "Brentford"
+      }
+   ],
+   "2023-00-15" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Crystal Palace",
+         "home_score" : "1",
+         "home_team" : "Chelsea"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Fulham",
+         "home_score" : "1",
+         "home_team" : "Newcastle"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Arsenal",
+         "home_score" : "0",
+         "home_team" : "Spurs"
+      }
+   ],
+   "2023-00-18" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Man Utd",
+         "home_score" : "1",
+         "home_team" : "Crystal Palace"
+      }
+   ],
+   "2023-00-19" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Spurs",
+         "home_score" : "4",
+         "home_team" : "Man City"
+      }
+   ],
+   "2023-00-21" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Chelsea",
+         "home_score" : "0",
+         "home_team" : "Liverpool"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "1",
+         "home_team" : "Bournemouth"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Brighton",
+         "home_score" : "2",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Aston Villa",
+         "home_score" : "0",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Everton",
+         "home_score" : "2",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Newcastle",
+         "home_score" : "0",
+         "home_team" : "Crystal Palace"
+      }
+   ],
+   "2023-00-22" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Brentford",
+         "home_score" : "0",
+         "home_team" : "Leeds"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Wolves",
+         "home_score" : "3",
+         "home_team" : "Man City"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Man Utd",
+         "home_score" : "3",
+         "home_team" : "Arsenal"
+      }
+   ],
+   "2023-00-23" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Spurs",
+         "home_score" : "0",
+         "home_team" : "Fulham"
+      }
+   ],
+   "2023-01-03" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Fulham",
+         "home_score" : "0",
+         "home_team" : "Chelsea"
+      }
+   ],
+   "2023-01-04" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Arsenal",
+         "home_score" : "1",
+         "home_team" : "Everton"
+      },
+      {
+         "away_score" : "4",
+         "away_team" : "Leicester",
+         "home_score" : "2",
+         "home_team" : "Aston Villa"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Southampton",
+         "home_score" : "3",
+         "home_team" : "Brentford"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Bournemouth",
+         "home_score" : "1",
+         "home_team" : "Brighton"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Crystal Palace",
+         "home_score" : "2",
+         "home_team" : "Man Utd"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Liverpool",
+         "home_score" : "3",
+         "home_team" : "Wolves"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "West Ham",
+         "home_score" : "1",
+         "home_team" : "Newcastle"
+      }
+   ],
+   "2023-01-05" : [
+      {
+         "away_score" : "0",
+         "away_team" : "Leeds",
+         "home_score" : "1",
+         "home_team" : "Nott'm Forest"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Man City",
+         "home_score" : "1",
+         "home_team" : "Spurs"
+      }
+   ],
+   "2023-01-08" : [
+      {
+         "away_score" : "2",
+         "away_team" : "Leeds",
+         "home_score" : "2",
+         "home_team" : "Man Utd"
+      }
+   ],
+   "2023-01-11" : [
+      {
+         "away_score" : "1",
+         "away_team" : "Chelsea",
+         "home_score" : "1",
+         "home_team" : "West Ham"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Brentford",
+         "home_score" : "1",
+         "home_team" : "Arsenal"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Brighton",
+         "home_score" : "1",
+         "home_team" : "Crystal Palace"
+      },
+      {
+         "away_score" : "0",
+         "away_team" : "Nott'm Forest",
+         "home_score" : "2",
+         "home_team" : "Fulham"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Spurs",
+         "home_score" : "4",
+         "home_team" : "Leicester"
+      },
+      {
+         "away_score" : "2",
+         "away_team" : "Wolves",
+         "home_score" : "1",
+         "home_team" : "Southampton"
+      },
+      {
+         "away_score" : "1",
+         "away_team" : "Newcastle",
+         "home_score" : "1",
+         "home_team" : "Bournemouth"
+      }
    ]
 }

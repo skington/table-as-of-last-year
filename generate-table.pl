@@ -8,6 +8,8 @@ use English qw(-no_match_vars);
 
 use JSON::MaybeXS;
 
+my $team_to_inspect = shift;
+
 # Load last year's results, and this year's results.
 my %game_results = (
     last_year => _read_json_file('2021-2022'),
@@ -27,6 +29,11 @@ my @table = generate_table();
 
 # And print it.
 print_table(@table);
+
+# Work out any changes since last year
+if ($team_to_inspect) {
+    print_game_changes($team_to_inspect);
+}
 
 # Supplied with a season spec - e.g. "2021-2022" - reads its results from JSON.
 
@@ -101,27 +108,49 @@ sub _game_wld {
 # assuming last year's. Returns a list of hashrefs, from most points to fewest.
 
 sub generate_table {
-    my %team_stats;
 
-    for my $team (keys %{$team_results{this_year}}) {
+    my $team_stats           = _stats_from_team_results('this_year');
+    my $last_year_team_stats = _stats_from_team_results('last_year');
+    for my $team (keys %$team_stats) {
+        $team_stats->{$team}{points_change}
+            = $team_stats->{$team}{points} - $last_year_team_stats->{$team}{points};
+    }
+    
+    return
+        map  { { team => $_, %{$team_stats->{$_}} } }
+        sort {
+               $team_stats->{$b}{points}          <=> $team_stats->{$a}{points}
+            || $team_stats->{$b}{goal_difference} <=> $team_stats->{$a}{goal_difference}
+        }
+        keys %$team_stats;
+}
+
+sub _stats_from_team_results {
+    my ($mode) = @_;
+
+    my %team_stats;
+    for my $team (keys %{ $team_results{this_year} }) {
         for my $opposing_team (grep { $_ ne $team } keys %{ $team_results{this_year} }) {
             for my $fixture (qw(home away)) {
-                my $game_result = $team_results{this_year}{$team}{$opposing_team}{$fixture}
-                    || $team_results{last_year}{$team}{$opposing_team}{$fixture};
+                my $game_result
+                    = $mode eq 'this_year'
+                    ? ($team_results{this_year}{$team}{$opposing_team}{$fixture}
+                        || $team_results{last_year}{$team}{$opposing_team}{$fixture})
+                    : $team_results{last_year}{$team}{$opposing_team}{$fixture};
                 $team_stats{$team}{played}++;
                 $team_stats{$team}{$game_result->{wld}}++;
                 $team_stats{$team}{goal_difference} += $game_result->{goal_difference};
-                $team_stats{$team}{points} += { W => 3, D => 1, L => 0}->{$game_result->{wld}};
+                $team_stats{$team}{points} += _points_from_wld($game_result->{wld});
             }
         }
     }
-    return
-        map  { { team => $_, %{$team_stats{$_}} } }
-        sort {
-               $team_stats{$b}{points} <=> $team_stats{$a}{points}
-            || $team_stats{$b}{goal_difference} <=> $team_stats{$a}{goal_difference}
-        }
-        keys %team_stats;
+    return \%team_stats;
+}
+
+sub _points_from_wld {
+    my ($wld) = @_;
+
+    return { W => 3, D => 1, L => 0}->{$wld};
 }
 
 # Supplied with a list of hashrefs, prints a football table of them.
@@ -130,9 +159,50 @@ sub print_table {
     my (@table) = @_;
 
     my $position = 1;
-    printf("P  %30s P  W  D  L  GD  Pts\n", 'Team');
+    printf("P  %30s P  W  D  L  GD  Pts Chg\n", 'Team');
     for my $team_stats (@table) {
-        printf("%-2d %-30s %2d %2d %2d %2d %3d %2d\n",
-            $position++, @$team_stats{qw(team played W D L goal_difference points)});
+        printf("%-2d %-30s %2d %2d %2d %2d %3d %2d  %3d\n",
+            $position++, @$team_stats{qw(team played W D L goal_difference points points_change)});
+    }
+}
+
+# Supplied with a team name, prints games that have changed result since last year
+
+sub print_game_changes {
+    my ($team_to_inspect) = @_;
+
+    my %change_in_points;
+    for my $opposing_team (sort keys %{ $team_results{this_year}{$team_to_inspect} }) {
+        for my $fixture (qw(home away)) {
+            no autovivification;
+            my %result;
+            if ($result{this_year} = $team_results{this_year}{$team_to_inspect}{$opposing_team}{$fixture}) {
+                $result{last_year} = $team_results{last_year}{$team_to_inspect}{$opposing_team}{$fixture};
+                if (my $points_change
+                    = _points_from_wld($result{this_year}{wld})
+                    - _points_from_wld($result{last_year}{wld}))
+                {
+                    push @{ $change_in_points{$points_change} },
+                        { team => $opposing_team, fixture => $fixture, result => \%result };
+                }
+            }
+        }
+    }
+
+    print "\n";
+    for my $points_change (sort { $b <=> $a } keys %change_in_points) {
+        printf("%d point%s %s\n\n",
+            abs($points_change),
+            abs($points_change) == 1 ? ''       : 's',
+            $points_change > 0       ? 'gained' : 'dropped'
+        );
+        for my $change (@{ $change_in_points{$points_change} }) {
+            printf("%s %s: %d-%d -> %d-%d\n",
+                $change->{team}, $change->{fixture},
+                map { @{ $change->{result}{$_} }{qw(home_score away_score)} }
+                qw(last_year this_year)
+            );
+        }
+        print "\n";
     }
 }
