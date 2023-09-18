@@ -17,14 +17,14 @@ my $team_to_inspect         = shift;
 
 # Load last year's results, and this year's results.
 my %game_results = (
-    last_year => _read_json_file('2021-2022'),
-    this_year => _read_json_file('2022-2023'),
+    last_year => _read_json_file('2022-2023'),
+    this_year => _read_json_file('2023-2024'),
 );
 
 # Replace last year's relegated teams with this year's promoted teams.
-_replace_last_year_team('Burnley' => 'Fulham');
-_replace_last_year_team('Watford' => 'Bournemouth');
-_replace_last_year_team('Norwich' => q{Nott'm Forest});
+_replace_last_year_team('Leicester'   => 'Burnley');
+_replace_last_year_team('Leeds'       => 'Sheffield Utd');
+_replace_last_year_team('Southampton' => 'Luton');
 
 # Derive the results.
 my %team_results = (map { $_ => _tally_game_results($game_results{$_}) } qw(last_year this_year));
