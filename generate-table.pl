@@ -8,7 +8,12 @@ use English qw(-no_match_vars);
 
 use JSON::MaybeXS;
 
-my $team_to_inspect = shift;
+my $show_remaining_fixtures;
+my $re_show_remaining_fixtures = qr/--remaining-fixtures/;
+if ($show_remaining_fixtures = grep { $_ =~ $re_show_remaining_fixtures } @ARGV) {
+    @ARGV = grep { $_ !~ $re_show_remaining_fixtures } @ARGV;
+}
+my $team_to_inspect         = shift;
 
 # Load last year's results, and this year's results.
 my %game_results = (
@@ -30,9 +35,12 @@ my @table = generate_table();
 # And print it.
 print_table(@table);
 
-# Work out any changes since last year
+# Work out any changes since last year, and optionally what the remaining fixtures were last year.
 if ($team_to_inspect) {
     print_game_changes($team_to_inspect);
+    if ($show_remaining_fixtures) {
+        show_remaining_fixtures($team_to_inspect);
+    }
 }
 
 # Supplied with a season spec - e.g. "2021-2022" - reads its results from JSON.
@@ -204,5 +212,25 @@ sub print_game_changes {
             );
         }
         print "\n";
+    }
+}
+
+# Supplied with a team name, shows the fixtures that have yet to happen.
+
+sub show_remaining_fixtures {
+    my ($team_to_inspect) = @_;
+
+    print "\nRemaining fixtures last year\n";
+    for my $opposing_team (sort keys %{ $team_results{this_year}{$team_to_inspect} }) {
+        for my $fixture (qw(home away)) {
+            no autovivification;
+            my %result;
+            if (!exists $team_results{this_year}{$team_to_inspect}{$opposing_team}{$fixture}) {
+                my $result_last_year
+                    = $team_results{last_year}{$team_to_inspect}{$opposing_team}{$fixture};
+                printf("%s %s: %d-%d\n",
+                    $opposing_team, $fixture, @$result_last_year{qw(home_score away_score)});
+            }
+        }
     }
 }
