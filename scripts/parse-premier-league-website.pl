@@ -21,12 +21,24 @@ while (<>) {
         $state{date} = sprintf('%04d-%02d-%02d', $year + 1900, $month, $day);
         next line;
     };
+    
+    # Blank lines or "Premier League" are useless furniture introduced late in the 2022/2023
+    # season.
+    next line if !/\S/ || /Premier League/;
 
-    # A score is obvious.
+    # A score is obvious (old format).
     /^ \s* (?<home_score> \d+ ) - (?<away_score> \d+ ) /x and do {
         %state = (%state, %+);
         next line;
     };
+
+    # Just a number is part of a score. The - between is furniture.
+    if (my ($score_value) = /(\d+)/) {
+        my $score_name = exists $state{home_score} ? 'away_score' : 'home_score';
+        $state{$score_name} = $score_value;
+        next line;
+    }
+    next line if $_ eq '-';
 
     # Anything else is a team name.
     if (!$state{home_team}) {
