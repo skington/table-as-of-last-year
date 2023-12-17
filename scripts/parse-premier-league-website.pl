@@ -22,9 +22,8 @@ while (<>) {
         next line;
     };
     
-    # Blank lines or "Premier League" are useless furniture introduced late in the 2022/2023
-    # season.
-    next line if !/\S/ || /Premier League/;
+    # Blank lines, "Premier League" or "Highlights availale" are useless furniture.
+    next line if !/\S/ || /Premier League/ || /Highlights available/i;
 
     # A score is obvious (old format).
     /^ \s* (?<home_score> \d+ ) - (?<away_score> \d+ ) /x and do {
@@ -32,8 +31,8 @@ while (<>) {
         next line;
     };
 
-    # Just a number is part of a score. The - between is furniture.
-    if (my ($score_value) = /(\d+)/) {
+    # Just a number, or "A" for abandoned, is part of a score. The - between is furniture.
+    if (my ($score_value) = /^ ( \d+ | A ) $/x) {
         my $score_name = exists $state{home_score} ? 'away_score' : 'home_score';
         $state{$score_name} = $score_value;
         next line;
@@ -49,7 +48,9 @@ while (<>) {
     # If this is the second name we've seen, we've got all the information we need about this game
     # now.
     $state{away_team} = $_;
-    push @{ $result_by_date{$state{date}} }, { %state{@game_stats} };
+    unless ($state{home_score} eq 'A' && $state{away_score} eq 'A') {
+        push @{ $result_by_date{$state{date}} }, { %state{@game_stats} };
+    }
     delete @state{@game_stats};
 }
 
