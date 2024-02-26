@@ -22,8 +22,10 @@ while (<>) {
         next line;
     };
     
-    # Blank lines, "Premier League" or "Highlights availale" are useless furniture.
-    next line if !/\S/ || /Premier League/ || /Highlights available/i;
+    # Blank lines, "Premier League" or "Highlights availale" are useless furniture, as is a stadium
+    # name, which takes the form <stadium name>, <place> so hope like mad that ", " never gets used
+    # anywhere else.
+    next line if !/\S/ || /Premier League/ || /Highlights available/i || / [A-Za-z], \s [A-Z] /x; 
 
     # A score is obvious (old format).
     /^ \s* (?<home_score> \d+ ) - (?<away_score> \d+ ) /x and do {
